@@ -1,0 +1,32 @@
+[MFLOG|0|2024-05-07T21:57:04.016258Z|runtime|2d342a1e-dc7d-4811-b5c8-8dfab20b3991]<flow HelloWorldFlow step join> failed:
+[MFLOG|0|2024-05-07T21:57:04.023963Z|runtime|26cbe94f-a501-4056-811f-502d4e9fd4ba]    Internal error
+[MFLOG|0|2024-05-07T21:57:04.025479Z|runtime|2a839fb5-176c-40ca-bebe-f7bd7ecb7fbf]Traceback (most recent call last):
+[MFLOG|0|2024-05-07T21:57:04.029255Z|runtime|6e2cb706-25dd-4708-9e30-2ac250c1b81b]  File "/home/notjdr/miniconda3/envs/datasci/lib/python3.10/site-packages/metaflow/cli.py", line 1177, in main
+[MFLOG|0|2024-05-07T21:57:04.029600Z|runtime|57a67331-bfc8-41ad-947e-9229c57773ab]    start(auto_envvar_prefix="METAFLOW", obj=state)
+[MFLOG|0|2024-05-07T21:57:04.029822Z|runtime|b7417f4a-75c2-423a-a111-a8ea5477369c]  File "/home/notjdr/miniconda3/envs/datasci/lib/python3.10/site-packages/metaflow/tracing/__init__.py", line 27, in wrapper_func
+[MFLOG|0|2024-05-07T21:57:04.029942Z|runtime|0b14618e-566d-483d-a9a0-6ca93a8867ef]    return func(args, kwargs)
+[MFLOG|0|2024-05-07T21:57:04.146005Z|runtime|e2706c7b-08ad-4eec-af47-b3f3a2c6ea7a]  File "/home/notjdr/miniconda3/envs/datasci/lib/python3.10/site-packages/metaflow/_vendor/click/core.py", line 829, in __call__
+[MFLOG|0|2024-05-07T21:57:04.146861Z|runtime|7bc8bc67-2a88-4b7c-abf4-dec52561749c]    return self.main(args, kwargs)
+[MFLOG|0|2024-05-07T21:57:04.147272Z|runtime|f940831c-ba41-4812-bcf0-e28a8cf735b2]  File "/home/notjdr/miniconda3/envs/datasci/lib/python3.10/site-packages/metaflow/_vendor/click/core.py", line 782, in main
+[MFLOG|0|2024-05-07T21:57:04.147805Z|runtime|6abc018a-3296-46d1-8e00-4c8d90c4d4c6]    rv = self.invoke(ctx)
+[MFLOG|0|2024-05-07T21:57:04.148216Z|runtime|3d2211d5-f00e-4a62-b38a-a26719a56738]  File "/home/notjdr/miniconda3/envs/datasci/lib/python3.10/site-packages/metaflow/_vendor/click/core.py", line 1259, in invoke
+[MFLOG|0|2024-05-07T21:57:04.148677Z|runtime|01b33449-08ba-4c42-8caf-48c085e753d5]    return _process_result(sub_ctx.command.invoke(sub_ctx))
+[MFLOG|0|2024-05-07T21:57:04.149132Z|runtime|1d532633-135b-485d-9457-2260094419f3]  File "/home/notjdr/miniconda3/envs/datasci/lib/python3.10/site-packages/metaflow/_vendor/click/core.py", line 1066, in invoke
+[MFLOG|0|2024-05-07T21:57:04.149531Z|runtime|7b9e8e0b-b345-4302-b307-25b9d4f6afb0]    return ctx.invoke(self.callback, ctx.params)
+[MFLOG|0|2024-05-07T21:57:04.149871Z|runtime|441a584b-b9a3-43bc-9572-2f53f7f2c032]  File "/home/notjdr/miniconda3/envs/datasci/lib/python3.10/site-packages/metaflow/_vendor/click/core.py", line 610, in invoke
+[MFLOG|0|2024-05-07T21:57:04.149950Z|runtime|11145451-a123-4f38-abaf-1c5b7827defc]    return callback(args, kwargs)
+[MFLOG|0|2024-05-07T21:57:04.150025Z|runtime|69ada994-12d3-48b3-af12-971733065782]  File "/home/notjdr/miniconda3/envs/datasci/lib/python3.10/site-packages/metaflow/_vendor/click/decorators.py", line 21, in new_func
+[MFLOG|0|2024-05-07T21:57:04.150098Z|runtime|0ec8da4e-b59e-4746-a11f-e006029ac4fb]    return f(get_current_context(), args, kwargs)
+[MFLOG|0|2024-05-07T21:57:04.150161Z|runtime|ea5fe12b-31f2-4940-bbb6-1a658175aa52]  File "/home/notjdr/miniconda3/envs/datasci/lib/python3.10/site-packages/metaflow/cli.py", line 572, in step
+[MFLOG|0|2024-05-07T21:57:04.150234Z|runtime|b6afc185-64f8-4da2-ab97-722ec7d69716]    task.run_step(
+[MFLOG|0|2024-05-07T21:57:04.150308Z|runtime|821852c1-abbe-4676-afc0-c11e9946407a]  File "/home/notjdr/miniconda3/envs/datasci/lib/python3.10/site-packages/metaflow/task.py", line 617, in run_step
+[MFLOG|0|2024-05-07T21:57:04.150378Z|runtime|7aebb036-811a-4314-851c-0c667c741cea]    self._exec_step_function(step_func, input_obj)
+[MFLOG|0|2024-05-07T21:57:04.150454Z|runtime|a0f31100-4ddb-41f8-b00d-a3bb18772b05]  File "/home/notjdr/miniconda3/envs/datasci/lib/python3.10/site-packages/metaflow/task.py", line 72, in _exec_step_function
+[MFLOG|0|2024-05-07T21:57:04.150540Z|runtime|62c2ac80-c84e-41cf-8bc0-04201c35ec94]    step_function(input_obj)
+[MFLOG|0|2024-05-07T21:57:04.150627Z|runtime|b648c37d-7d10-44c0-9f34-3f27b803276e]  File "/home/notjdr/dsbook/chapter-3/helloworld.py", line 36, in join
+[MFLOG|0|2024-05-07T21:57:04.150720Z|runtime|7d09b816-fd6b-4480-95e8-325a98d95af1]    self.creature = inputs[2].creature
+[MFLOG|0|2024-05-07T21:57:04.150820Z|runtime|9b6e63ad-68b3-4693-b88b-df187016ad1f]  File "/home/notjdr/miniconda3/envs/datasci/lib/python3.10/site-packages/metaflow/datastore/inputs.py", line 15, in __getitem__
+[MFLOG|0|2024-05-07T21:57:04.150914Z|runtime|d91bee86-fed6-4b70-a312-588d1369588c]    return self.flows[idx]
+[MFLOG|0|2024-05-07T21:57:04.151184Z|runtime|0e8e8980-cce1-4465-ad72-97332428541d]IndexError: list index out of range
+[MFLOG|0|2024-05-07T21:57:04.151298Z|runtime|723ca61a-4034-43a4-b25f-22a6c80a7cda]
+[MFLOG|0|2024-05-07T21:57:04.151807Z|runtime|11e6f062-25d1-454a-b17c-c815043635b4]Task failed.

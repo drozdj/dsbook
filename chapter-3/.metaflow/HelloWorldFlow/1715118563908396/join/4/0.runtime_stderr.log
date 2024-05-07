@@ -1,0 +1,32 @@
+[MFLOG|0|2024-05-07T21:49:24.826087Z|runtime|7cdcc9f9-1a8d-4eef-ba3d-2aabef1c8636]<flow HelloWorldFlow step join> failed:
+[MFLOG|0|2024-05-07T21:49:24.827133Z|runtime|e434d829-a89f-48bf-a583-58ac49a7008f]    Internal error
+[MFLOG|0|2024-05-07T21:49:24.829844Z|runtime|b5e04aa7-5714-482f-aa30-a37422b20605]Traceback (most recent call last):
+[MFLOG|0|2024-05-07T21:49:24.886064Z|runtime|5efc3026-a9d5-4c6d-9235-fdb99dd20c08]  File "/home/notjdr/miniconda3/envs/datasci/lib/python3.10/site-packages/metaflow/cli.py", line 1177, in main
+[MFLOG|0|2024-05-07T21:49:24.886393Z|runtime|abf98452-e505-4c32-947f-3d723a17b1c6]    start(auto_envvar_prefix="METAFLOW", obj=state)
+[MFLOG|0|2024-05-07T21:49:24.886501Z|runtime|6ba407eb-fba4-4cfb-9002-ae1d209ae0d3]  File "/home/notjdr/miniconda3/envs/datasci/lib/python3.10/site-packages/metaflow/tracing/__init__.py", line 27, in wrapper_func
+[MFLOG|0|2024-05-07T21:49:24.886763Z|runtime|b3125c48-8ec9-43b3-be49-47356a9cca89]    return func(args, kwargs)
+[MFLOG|0|2024-05-07T21:49:24.886897Z|runtime|83c16340-6f87-482f-ba82-6a363be6949b]  File "/home/notjdr/miniconda3/envs/datasci/lib/python3.10/site-packages/metaflow/_vendor/click/core.py", line 829, in __call__
+[MFLOG|0|2024-05-07T21:49:24.887113Z|runtime|af0aada5-0605-44dd-9c41-1ab25130d332]    return self.main(args, kwargs)
+[MFLOG|0|2024-05-07T21:49:24.887220Z|runtime|7791519a-389e-438c-8e0e-17765e58b261]  File "/home/notjdr/miniconda3/envs/datasci/lib/python3.10/site-packages/metaflow/_vendor/click/core.py", line 782, in main
+[MFLOG|0|2024-05-07T21:49:24.887351Z|runtime|cbc3732f-854e-496b-a228-f274f532d05a]    rv = self.invoke(ctx)
+[MFLOG|0|2024-05-07T21:49:24.887465Z|runtime|c8e8ac1e-b92d-4720-8345-c924640a8b7e]  File "/home/notjdr/miniconda3/envs/datasci/lib/python3.10/site-packages/metaflow/_vendor/click/core.py", line 1259, in invoke
+[MFLOG|0|2024-05-07T21:49:24.887530Z|runtime|204f4864-f9f0-4738-aad5-56fbb24fcc70]    return _process_result(sub_ctx.command.invoke(sub_ctx))
+[MFLOG|0|2024-05-07T21:49:24.887617Z|runtime|e5a93617-62e3-45bb-997d-9546c6834d2c]  File "/home/notjdr/miniconda3/envs/datasci/lib/python3.10/site-packages/metaflow/_vendor/click/core.py", line 1066, in invoke
+[MFLOG|0|2024-05-07T21:49:24.887719Z|runtime|f584b520-7639-46dc-8055-f0b2da8d4101]    return ctx.invoke(self.callback, ctx.params)
+[MFLOG|0|2024-05-07T21:49:24.887811Z|runtime|46505a94-d0d5-4d79-a7f6-24b23f2568b7]  File "/home/notjdr/miniconda3/envs/datasci/lib/python3.10/site-packages/metaflow/_vendor/click/core.py", line 610, in invoke
+[MFLOG|0|2024-05-07T21:49:24.887926Z|runtime|a523897f-e194-41c7-b3b1-353bd03e2afd]    return callback(args, kwargs)
+[MFLOG|0|2024-05-07T21:49:24.888009Z|runtime|d27cfab7-f4d2-4892-905c-772e4f095a0a]  File "/home/notjdr/miniconda3/envs/datasci/lib/python3.10/site-packages/metaflow/_vendor/click/decorators.py", line 21, in new_func
+[MFLOG|0|2024-05-07T21:49:24.888129Z|runtime|039c0576-701a-4065-8527-7ff996e42f69]    return f(get_current_context(), args, kwargs)
+[MFLOG|0|2024-05-07T21:49:24.888226Z|runtime|427f6ae6-749a-4455-80de-63307e451ce1]  File "/home/notjdr/miniconda3/envs/datasci/lib/python3.10/site-packages/metaflow/cli.py", line 572, in step
+[MFLOG|0|2024-05-07T21:49:24.888311Z|runtime|7c24cc1a-9613-49d5-96aa-dfaaa18d90c6]    task.run_step(
+[MFLOG|0|2024-05-07T21:49:24.888413Z|runtime|8ec3c428-0d92-4f77-96f4-931f11c16f93]  File "/home/notjdr/miniconda3/envs/datasci/lib/python3.10/site-packages/metaflow/task.py", line 617, in run_step
+[MFLOG|0|2024-05-07T21:49:24.888516Z|runtime|bedf7f88-fd71-4632-9950-82fbb1c1044b]    self._exec_step_function(step_func, input_obj)
+[MFLOG|0|2024-05-07T21:49:24.888633Z|runtime|6247d92e-9c63-4d07-95db-e689447b954b]  File "/home/notjdr/miniconda3/envs/datasci/lib/python3.10/site-packages/metaflow/task.py", line 72, in _exec_step_function
+[MFLOG|0|2024-05-07T21:49:24.888737Z|runtime|19c8b40a-fdbc-4c04-a84a-bc2a33c65baa]    step_function(input_obj)
+[MFLOG|0|2024-05-07T21:49:24.888840Z|runtime|88f9687e-76c9-482e-bc8c-d187cadf7132]  File "/home/notjdr/dsbook/chapter-3/helloworld.py", line 30, in join
+[MFLOG|0|2024-05-07T21:49:24.888925Z|runtime|cc5d7aaa-a56f-4286-9cd7-deeca8a8db15]    self.string = self.man, self.woman
+[MFLOG|0|2024-05-07T21:49:24.889006Z|runtime|d785d3dc-4604-4f72-ad6d-a0606d3469eb]  File "/home/notjdr/miniconda3/envs/datasci/lib/python3.10/site-packages/metaflow/flowspec.py", line 236, in __getattr__
+[MFLOG|0|2024-05-07T21:49:24.889097Z|runtime|278f9f2e-781d-4cdc-8cbf-90e6baee3785]    raise AttributeError("Flow %s has no attribute '%s'" % (self.name, name))
+[MFLOG|0|2024-05-07T21:49:24.889200Z|runtime|35ca068b-d149-4b2e-99ef-a33f4e8f054d]AttributeError: Flow HelloWorldFlow has no attribute 'man'
+[MFLOG|0|2024-05-07T21:49:24.889266Z|runtime|de419047-143a-419e-b193-fb69dbdaaae2]
+[MFLOG|0|2024-05-07T21:49:24.889816Z|runtime|4c000cd6-e0ff-49b6-aa0d-053c0b77a63b]Task failed.
