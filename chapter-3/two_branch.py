@@ -1,8 +1,8 @@
 from metaflow import FlowSpec, step
 
-#working w/ multiple branches
+#working w/ two branches
 
-class MultipleBranchFlow(FlowSpec):
+class TwoBranchFlow(FlowSpec):
 
     @step
     def start(self):
@@ -42,4 +42,4 @@ class MultipleBranchFlow(FlowSpec):
         print("This is end step")
 
 if __name__ == '__main__':
-    MultipleBranchFlow()
+    TwoBranchFlow()

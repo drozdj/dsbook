@@ -1,0 +1,6 @@
+.metaflow/
+metadata/
+artifacts/
+logs/
+conda_env.yaml
+metaflow.config
