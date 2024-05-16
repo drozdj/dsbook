@@ -47,7 +47,8 @@ class ThreeBranchFlow(FlowSpec):
         # print(inputs.hello_man.string)
         # print(inputs.hello_woman.string)
         self.string = [inputs[x].string for x in range(3)]
-        self.creature = inputs[0].creature
+        # self.creature = inputs[0].creature
+        self.merge_artifacts(inputs)
         self.next(self.end)
 
     @step

@@ -26,7 +26,7 @@ class ClassifierTrainFlow(FlowSpec):
     def train_svm(self):
         from sklearn import svm
 
-        self.model = svm.SVC(kernel='polynomial') # CHANGE THIS TO 'poly'
+        self.model = svm.SVC(kernel='poly') # CHANGE THIS TO 'poly'
         self.model.fit(self.train_data, self.train_labels)
         self.next(self.choose_model)
 
