@@ -12,3 +12,4 @@ chapter-7/.metaflow/
 chapter-8/.metaflow/
 chapter-9/.metaflow/
 tmp/.metaflow/
+tmp/metaflow_config-json.config
