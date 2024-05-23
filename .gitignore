@@ -4,12 +4,6 @@ artifacts/
 logs/
 conda_env.yaml
 metaflow.config
-chapter-3/.metaflow/
-chapter-4/.metaflow/
-chapter-5/.metaflow/
-chapter-6/.metaflow/
-chapter-7/.metaflow/
-chapter-8/.metaflow/
-chapter-9/.metaflow/
-tmp/.metaflow/
 tmp/metaflow_config-json.config
+__pycache__
+/home/notjdr/dsbook/tmp/chapter-5.4/yelp_review_full_csv.tgz
